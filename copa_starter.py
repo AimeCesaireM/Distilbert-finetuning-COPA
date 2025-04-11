@@ -5,7 +5,7 @@ from transformers import AutoModelForSequenceClassification
 import numpy as np
 from accelerate import Accelerator
 from transformers import get_linear_schedule_with_warmup
-from transformers import AdamW, AutoModelForSequenceClassification, get_scheduler
+from transformers import AutoModelForSequenceClassification, get_scheduler
 from accelerate.utils import find_executable_batch_size
 import transformers
 import torch
@@ -79,7 +79,7 @@ def evaluate(model,dataset):
           logits = outputs.logits
           predictions = torch.argmax(logits, dim=-1)
           correct += (predictions == batch["labels"]).sum().item()
-          total += batch["labels"].size[0]
+          total += batch["labels"].size(0)
   accuracy = correct / total if total > 0 else 0
   print("Validation Accuracy: {:.2f}%".format(accuracy * 100))
   model.train()
