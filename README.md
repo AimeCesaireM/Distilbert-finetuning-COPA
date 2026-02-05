@@ -1,6 +1,6 @@
 # Fine-tuning DistilBERT on COPA for Commonsense Reasoning
 
-This repository contains a project for fine-tuning a pre-trained DistilBERT model on the COPA (Choice of Plausible Alternatives) dataset to perform commonsense reasoning via a multiple-choice question answering task. This project was developed as part of Homework #6 for COSC-NNN: Natural Language Processing (Spring 2025) at Amherst College under the guidance of Professor Shira Wein.
+This repository contains a project for fine-tuning a pre-trained DistilBERT model on the COPA (Choice of Plausible Alternatives) dataset to perform commonsense reasoning via a multiple-choice question answering task. This project was developed as part of Homework #6 for COSC-243: Natural Language Processing (Spring 2025) at Amherst College under the guidance of Professor Shira Wein.
 
 ---
 
